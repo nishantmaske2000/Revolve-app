@@ -1,0 +1,280 @@
+
+/* ===================Programme banner Start=================================================== */
+
+/* Base Styles */
+.pg_content2::before {
+  content: '';
+  align-items: center;
+  margin-right: 30px;
+  background:rgba(0,0,0,0.7) url(../../public/images/pg1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  margin-top: -30px;
+  background-size: cover;
+  opacity: 1.0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-blend-mode: darken;
+}
+
+.pg_content2 {
+  height: 40vh;
+}
+
+.pg_content2 h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 100px;
+  padding-top: 100px;
+  text-align: left;
+  margin: 30px;
+  color: white;
+}
+
+.pg_content2 p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+  margin: 30px;
+  color: white;
+}
+
+.p1 {
+  background-color: black;
+  height: 250px;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  margin: 120px;
+  color: white;
+  border: 4px solid red;
+  
+}
+
+
+/* ===================Programme banner End=================================================== */
+
+
+/* ===================Programme banner Media Queries Start=================================================== */
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .pg_content2 h1 {
+      font-size: 2rem;
+      margin: 15px;
+      text-align: left;
+  }
+  .pg_content2 p {
+      font-size: 1.1rem;
+      margin: 14px;
+      text-align: left;
+  }
+   .p1 {
+    width: 90%;
+     height: 100px;
+      /* min-height: auto; */
+      font-size: 10px;
+      /* float: center; */
+      margin: 150px;
+      margin-left: 22px;
+      /* padding: 10px; */
+      /* max-width: 95%; */
+      word-wrap: break-word;
+      /* align-items: center; */
+  }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+  .pg_content2 h1 {
+      font-size: 2.5rem;
+      margin: 15px;
+      text-align: left;
+  }
+  .pg_content2 p {
+      font-size: 1.2rem;
+      margin: 15px;
+      text-align: left;
+  }
+  .p1 {
+      height: 150%;
+      font-size: 1.1rem;
+      padding: 20px;
+      margin-left: 65px;
+      width: 70%;
+      word-wrap: break-word;
+      text-align: center;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+  .pg_content2 h1 {
+      font-size: 3rem;
+      margin: 25px;
+  }
+  .pg_content2 p {
+      font-size: 1.5rem;
+      margin: 25px;
+  }
+  .p1 {
+      min-height: auto;
+      font-size: 1.4rem;
+      padding: 20px;
+      max-width: 85%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
+  .pg_content2 h1 {
+      font-size: 3.5rem;
+      margin: 30px;
+  }
+  .pg_content2 p {
+      font-size: 1.6rem;
+      margin: 30px;
+  }
+  .p1 {
+      min-height: auto;
+      font-size: 1.5rem;
+      padding: 25px;
+      max-width: 80%;
+  }
+}
+/* ===================Programme banner Media Queries End=================================================== */
+
+
+
+
+/* ===================Programme Card section Start=================================================== */
+
+
+/* Base Styles */
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: black;
+  border: 4px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  width: 25%;
+  max-width: 350px;
+  text-align: center;
+  
+ 
+}
+
+.card img {
+  height: auto;
+  margin: 25px;
+  margin-left: -3px;
+  width: 100%;
+  border-radius: 1rem;
+  transition: 0.5s ease;
+ 
+}
+
+.card img:hover {
+  transform: scale(1.18);
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.card h3 {
+  font-size: 30px;
+  color: red;
+}
+
+.card p {
+  margin: 4%;
+  color: white;
+  font-size: 12.5px;
+}
+
+
+  /* ===================Programme Card section Start=================================================== */
+
+   /* ===================Programme Card section Media Query Start=================================================== */
+
+   @media (min-width: 300px) and (max-width: 500px) {
+    .card_container{
+      margin-top: -100px;
+
+    }
+      .card {
+        width: 100%;
+        /* margin:5px auto; */
+        /* margin-bottom: 350%; */
+      }
+      .card img {
+        margin: 10px auto;
+      }
+      .card h3 {
+        font-size: 20px;
+      }
+      .card p {
+        font-size: 10px;
+      }
+    }
+    
+    /* For screens between 500px and 750px */
+    @media (min-width: 500px) and (max-width: 750px) {
+      .card_container{
+        margin-top: -100px;
+        /* width: 100%; */
+      }
+      .card {
+        width: 110%;
+        margin: 15px;
+      }
+      .card img {
+        margin: 15px auto;
+      }
+      .card h3 {
+        font-size: 25px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+    }
+    
+    /* For screens between 750px and 1200px */
+    @media (min-width: 750px) and (max-width: 1200px) {
+      .card_container{
+        margin-top: -100px;
+        /* width: 100%; */
+      }
+      .card {
+        width: 350%;
+        /* margin: 50px; */
+      }
+      .card img {
+        margin: 15px auto;
+      }
+      .card h3 {
+        font-size: 25px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+    }
+    
+    /* For screens between 1200px and 1900px */
+    @media (min-width: 1200px) and (max-width: 1900px) {
+      .card {
+        width: 25%;
+      }
+    }
+
+
+    /* ===================Programme Card section Media Query End=================================================== */
